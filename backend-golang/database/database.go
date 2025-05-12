@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 	"log"
-	"santrikoding/backend-api/config"
-	"santrikoding/backend-api/models"
+	"septianadipratama/backend-api/config"
+	"septianadipratama/backend-api/models"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

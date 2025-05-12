@@ -1,7 +1,7 @@
 package main
 
 import (
-	"santrikoding/backend-api/config"
+	"septianadipratama/backend-api/config"
 
 	"github.com/gin-gonic/gin"
 )

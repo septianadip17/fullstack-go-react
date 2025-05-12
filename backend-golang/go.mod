@@ -1,4 +1,4 @@
-module santrikoding/backend-api
+module septianadipratama/backend-api
 
 go 1.24.2
 
