@@ -1,10 +1,16 @@
 package main
 
 import (
+	"santrikoding/backend-api/config"
+
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+
+	//load config .env
+	config.LoadEnv()
+
 	//inisialiasai Gin
 	router := gin.Default()
 
@@ -17,6 +23,6 @@ func main() {
 		})
 	})
 
-	//mulai server dengan port 3000
-	router.Run(":3000")
+	//mulai server
+	router.Run(":" + config.GetEnv("APP_PORT", "3000"))
 }
