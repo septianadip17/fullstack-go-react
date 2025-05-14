@@ -2,6 +2,7 @@ package main
 
 import (
 	"septianadipratama/backend-api/config"
+	"septianadipratama/backend-api/database"
 
 	"github.com/gin-gonic/gin"
 )
@@ -10,6 +11,9 @@ func main() {
 
 	//load config .env
 	config.LoadEnv()
+
+	//inisialisasi database
+	database.InitDB()
 
 	//inisialiasai Gin
 	router := gin.Default()
